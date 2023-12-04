@@ -1,13 +1,13 @@
 import java.io.*;
-
-class Test{
+class a{
     public static void main(String[] args){
 
-        File file = new File("Test.java");
+        File file = new File("text.txt");
+        String[] lines = new String[0];
         try
         {
             BufferedReader reader = new BufferedReader(new FileReader(file));
-            String[] lines = reader.lines().toArray(size -> new String[size]);
+            lines = reader.lines().toArray(size -> new String[size]);
             reader.close();
         }
         catch(Exception e)
@@ -15,7 +15,4 @@ class Test{
             System.out.println(e);
         }
     }
-    
-    
 }
-
