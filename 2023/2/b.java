@@ -38,6 +38,6 @@ class b{
             }
             sum += maxr * maxb * maxg;
         }
-        System.out.println(sum);
+        System.out.println("Answer: " + sum);
     }
 }

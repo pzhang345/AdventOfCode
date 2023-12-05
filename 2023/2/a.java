@@ -35,6 +35,6 @@ class a{
             }
             sum += 1 + i;
         }
-        System.out.println(sum);
+        System.out.println("Answer: " + sum);
     }
 }

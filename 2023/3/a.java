@@ -62,6 +62,6 @@ class a{
             num = 0;
             nextToSymbol = false;
         }
-        System.out.println(sum);
+        System.out.println("Answer: " + sum);
     }
 }
