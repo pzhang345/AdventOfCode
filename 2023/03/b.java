@@ -8,19 +8,6 @@ class b{
             return false;
         }
     }
-    public static boolean nextToSymbol(String[] lines, int i1, int j1){
-        for(int i = -1; i <= 1; i++){
-            for(int j = -1; j <= 1; j++){
-                try{
-                    if(lines[i+i1].charAt(j+j1) != '.' && !isNum("" + lines[i+i1].charAt(j+j1))){
-                        System.out.println(lines[i+i1].charAt(j+j1));
-                        return true;
-                    }
-                }catch(Exception e){}
-            }
-        }
-        return false;
-    }
     public static int nextToNum(String[] lines, int i1, int j1){
         int num1 = 0;
         int num2 = 0;
