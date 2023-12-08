@@ -10,14 +10,16 @@ class a{
     public static long aToB(long[][] arr, long a){
         for(int i = 0; i < arr.length; i++){
             if(arr[i][1] <= a &&  a <= arr[i][1] + arr[i][2]){
+                System.out.println(arr[i][0] + " " + arr[i][1] + " " + arr[i][2]);
                 return arr[i][0] + (a - arr[i][1]);
+
             }
         }
         return a;
     }
     public static void main(String[] args){
 
-        File file = new File("text.txt");
+        File file = new File("test.txt");
         String[] lines = new String[0];
         try
         {
@@ -48,10 +50,10 @@ class a{
             }catch(Exception e){
                 aToB[i] = new long[lines.length - sep[i]][3];
             }
-            System.out.println("" + sep[i] +" " +  max);
+            //System.out.println("" + sep[i] + " " +  max);
             for(int j = sep[i]; j < max - 2; j++){
                 aToB[i][j - sep[i]] = StoLArr(lines[j].split(" "));
-                System.out.println(aToB[i][j - sep[i]][1]);
+                //System.out.println(aToB[i][j - sep[i]][1]);
             }
         }
         long min = -1;
@@ -59,10 +61,12 @@ class a{
             long val = seeds[i];
             for(int j = 0; j < aToB.length; j++){
                 val = aToB(aToB[j], val);
+                System.out.println(val);
             }
             if(min == -1 || min > val){
                 min = val;
             }
+            System.out.println();
         }
         System.out.println("Answer: " + min);
     }
