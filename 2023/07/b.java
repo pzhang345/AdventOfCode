@@ -70,7 +70,6 @@ class CardValue{
     }
     public void changeType(){
         ArrayList<Integer> inRowArr = new ArrayList<Integer>();
-        int previous = 0;
         int inRow = 0;
         int num1s = 0;
         for(int i = 0; i < sortedCards.length; i++){
@@ -91,7 +90,7 @@ class CardValue{
             inRowArr.add(inRow);
         }
         Collections.sort(inRowArr);
-        inRowArr.remove(new Integer(0));
+        inRowArr.remove(Integer.valueOf(0));
         if(inRowArr.size() != 0){
             int max = inRowArr.get(inRowArr.size() - 1) + num1s;
             inRowArr.remove(inRowArr.size() - 1);

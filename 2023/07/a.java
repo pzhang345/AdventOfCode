@@ -70,7 +70,6 @@ class CardValue{
     }
     public void changeType(){
         ArrayList<Integer> inRowArr = new ArrayList<Integer>();
-        int previous = 0;
         int inRow = 0;
         for(int i = 0; i < sortedCards.length; i++){
             try{
