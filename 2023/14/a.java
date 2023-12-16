@@ -51,6 +51,6 @@ class a{
                 }
             }
         }
-        System.out.println(sum);
+        System.out.println("Answer: " + sum);
     }
 }

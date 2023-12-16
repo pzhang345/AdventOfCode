@@ -1,5 +1,5 @@
 import java.io.*;
-class a{
+class b{
     public static void main(String[] args){
 
         File file = new File("text.txt");
@@ -24,7 +24,7 @@ class a{
            //System.out.print(seq.getCount());
            //System.out.println(total);
         }
-        System.out.println(total);
+        System.out.println("Answer:" + total);
     }
 }
 class Seq{

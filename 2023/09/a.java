@@ -51,6 +51,6 @@ class a{
             int[] arr = StoIntArr(i);
             sum += getNextNum(arr);
         }
-        System.out.println(sum);
+        System.out.println("Answer: " + sum);
     }
 }

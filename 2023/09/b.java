@@ -1,5 +1,5 @@
 import java.io.*;
-class a{
+class b{
     public static int[] StoIntArr(String str){
         String[] snums = str.split(" ");
         int[] nums = new int[snums.length];
@@ -51,6 +51,6 @@ class a{
             int[] arr = StoIntArr(i);
             sum += getNextNum(arr);
         }
-        System.out.println(sum);
+        System.out.println("Answer: " + sum);
     }
 }

@@ -21,7 +21,7 @@ class a{
             total += seq.getCount();
             //System.out.println(total);
         }
-        System.out.println(total);
+        System.out.println("Answer: " + total);
     }
 }
 class Seq{

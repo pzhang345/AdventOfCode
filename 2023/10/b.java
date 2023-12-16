@@ -1,5 +1,5 @@
 import java.io.*;
-class a{
+class b{
     public static void main(String[] args){
 
         File file = new File("text.txt");

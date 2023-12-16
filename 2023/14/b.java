@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-class a{
+class b{
     public static void printArr(char[][] arr){
         for(char[] i:arr){
             for(char j:i){
@@ -134,6 +134,6 @@ class a{
                 }
             }
         }
-        System.out.println(sum);
+        System.out.println("Answer: " + sum);
     }
 }

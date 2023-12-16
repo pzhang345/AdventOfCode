@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-class a{
+class b{
     public static int min(int a, int b){
         if(a > b){
             return b;

@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-class a{
+class b{
     public static long findSum(int[][] arr){
         long total = 0;
         for(int i = 0; i < arr.length; i++){
