@@ -81,7 +81,7 @@ class BestScores{
 class Map{
     int[][] vals;
     BestScores[][] scores;
-    public static HashMap<Character,Character> oppisite = new HashMap<Character,Character>();
+    public static HashMap<Character,Character> opposite = new HashMap<Character,Character>();
     public Map(String[] lines){
         vals = new int[lines.length][lines[0].length()];
         scores = new BestScores[lines.length][lines[0].length()];
@@ -93,11 +93,11 @@ class Map{
             }
         }
         printArr(vals);
-        oppisite.put('l','r');
-        oppisite.put('u','d');
-        oppisite.put('r','l');
-        oppisite.put('d','u');
-        oppisite.put(' ',' ');
+        opposite.put('l','r');
+        opposite.put('u','d');
+        opposite.put('r','l');
+        opposite.put('d','u');
+        opposite.put(' ',' ');
 
     }
     public void move(int i, int j, BestScore score,String path){
@@ -119,7 +119,7 @@ class Map{
             if(score.dir == d){
                 dist = score.dist;
             }
-            if(!(dist >= 3 || oppisite.get(d) == score.dir)){
+            if(!(dist >= 3 || opposite.get(d) == score.dir)){
                 //System.out.print(scores[i][j] + " ");
                 if(scores[i][j].add(new BestScore(score.score +  vals[i][j], d, dist + 1))){
                     //System.out.println(scores[i][j]);
