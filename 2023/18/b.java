@@ -113,18 +113,6 @@ class b{
             }
         }
         total += perimeter/2 + 1;
-        System.out.println(total);
-        // linex = sort(linex);
-        // System.out.println();
-        // liney = sort(liney);
-        // //System.out.println(minx + " " + maxx + " " + miny + " " + maxy);
-        // for(long x = minx; x <= maxx; x++){
-        //         ArrayList<Long> intervals = getInterval(x, liney,linex);
-        //         System.out.println(intervals);
-        //         for(int i = 0; i < intervals.size(); i+=2){
-        //             total += intervals.get(i+1) - intervals.get(i) + 1;
-        //         }
-        //     }
-        // System.out.println(total);
+        System.out.println("Answer: " + total);
     }
 }
