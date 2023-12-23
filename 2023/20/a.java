@@ -32,7 +32,7 @@ class a{
             Node.pressButton();
             //System.out.println();
         }
-        System.out.println(Process.high + " " + Process.low + " " + (long)(Process.high*Process.low));
+        System.out.println("Answer:" + (long)(Process.high*Process.low));
     } 
 }
 class Process{

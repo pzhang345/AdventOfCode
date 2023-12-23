@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-class a{
+class b{
     public static void printArr(int[] arr){
         for(int i: arr){
             System.out.print(i + " ");
@@ -66,7 +66,7 @@ class a{
         }
         printArr(Process.first);
         printArr(Process.loop);
-        System.out.println(LCM(Process.loop));
+        System.out.println("Answer: " + LCM(Process.loop));
     } 
 }
 class Process{
