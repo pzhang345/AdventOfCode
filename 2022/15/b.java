@@ -86,7 +86,7 @@ class b {
     }*/
     String str;
     //File file = new File("beaconstest.txt");
-    File file = new File("beacons.txt");
+    File file = new File("text.txt");
     try {
       Scanner sc = new Scanner(file);
       while (sc.hasNextLine()) {

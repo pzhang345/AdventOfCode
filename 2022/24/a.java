@@ -3,7 +3,7 @@ import java.util.*;
 class a {
   public static void main(String[] args) {
     String str = "";
-    File file = new File("blizzard.txt");
+    File file = new File("text.txt");
     int x = 0;
     int y = 0;
     char[][] all;

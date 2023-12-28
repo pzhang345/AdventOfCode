@@ -8,7 +8,7 @@ class b {
     int high1;
     int high2;
     int count = 0;
-    File file = new File("file.txt");
+    File file = new File("text.txt");
     try{
       Scanner sc = new Scanner(file);
       while (sc.hasNextLine()){

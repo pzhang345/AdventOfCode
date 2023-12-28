@@ -10,7 +10,7 @@ class b {
     int highy = 0;
     int count = 0;
     Cave cave;
-    File file = new File("rocks.txt");
+    File file = new File("text.txt");
     try{
       Scanner sc = new Scanner(file);
       while (sc.hasNextLine()){

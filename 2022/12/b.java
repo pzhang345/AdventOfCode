@@ -8,7 +8,7 @@ class b {
     char[][] mountain;
     int x = 0;
     int y = 20;
-    File file = new File("height.txt");
+    File file = new File("text.txt");
     //System.out.println((int)('a') - (int)('A'));
     try{
       Scanner sc = new Scanner(file);

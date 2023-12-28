@@ -41,7 +41,7 @@ class b {
     }
     ArrayList<String> Tpos = new ArrayList<String>();
     Tpos.add("0#0");
-    File file = new File("moves.txt");
+    File file = new File("text.txt");
     int count = 0;
     String temp = "";
     boolean change = false;

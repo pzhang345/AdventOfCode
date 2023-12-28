@@ -3,7 +3,7 @@ import java.util.*;
 class b {
   public static void main(String[] args) {
     String str = " ";
-    File file = new File("moves.txt");
+    File file = new File("text.txt");
     int maxx = 0;
     int y = -1;
     int[][] tempboard;

@@ -6,7 +6,7 @@ class b {
     int high = 0;
     int count = 0;
     String string = "";
-    File file = new File("number.txt");
+    File file = new File("text.txt");
     try{
       Scanner sc = new Scanner(file);
       while (sc.hasNextLine()){

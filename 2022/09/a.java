@@ -33,7 +33,7 @@ class a {
     int Ty=0;
     ArrayList<String> Tpos = new ArrayList<String>();
     Tpos.add("0#0");
-    File file = new File("moves.txt");
+    File file = new File("text.txt");
     int count = 0;
     try{
       Scanner sc = new Scanner(file);

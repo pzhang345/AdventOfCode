@@ -8,7 +8,7 @@ class a {
     char common = ' ';
     int total = 0;
     boolean b = false;
-    File file = new File("file.txt");
+    File file = new File("text.txt");
     try{
       Scanner sc = new Scanner(file);
       while (sc.hasNextLine()){

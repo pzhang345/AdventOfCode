@@ -6,7 +6,7 @@ class b {
     String str = "";
     int count = 0;
     Valves pos;
-    File file = new File("tunnels.txt");
+    File file = new File("text.txt");
     try{
       Scanner sc = new Scanner(file);
       while (sc.hasNextLine()){

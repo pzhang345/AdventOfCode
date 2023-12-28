@@ -12,7 +12,7 @@ class a {
     int count = 0;
     int indy = 2000000;
     String str = "";
-    File file = new File("beacons.txt");
+    File file = new File("text.txt");
     try{
       Scanner sc = new Scanner(file);
       while (sc.hasNextLine()){

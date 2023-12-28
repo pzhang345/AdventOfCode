@@ -35,7 +35,7 @@ class b {
   }
   public static void main(String[] args) {
     String str = "";
-    File file = new File("trees.txt");
+    File file = new File("text.txt");
     int x = 0;
     int y = 0;
     int count = 0;

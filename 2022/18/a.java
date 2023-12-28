@@ -3,7 +3,7 @@ import java.util.*;
 class a {
   public static void main(String[] args) {
     String str = "";
-    File file = new File("cubes.txt");
+    File file = new File("text.txt");
     ArrayList<Cube> cubes = new ArrayList<Cube>();
     try{
       Scanner sc = new Scanner(file);

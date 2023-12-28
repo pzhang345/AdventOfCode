@@ -3,7 +3,7 @@ import java.util.*;
 class a {
   public static void main(String[] args) {
     String str = "";
-    File file = new File("code.txt");
+    File file = new File("text.txt");
     int cyclenumber = 0;
     int signal = 1;
     int total = 0;

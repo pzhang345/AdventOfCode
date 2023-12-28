@@ -61,7 +61,7 @@ class b {
   }
   public static void main(String[] args) {
     String str = "";
-    File file = new File("cubes.txt");
+    File file = new File("text.txt");
     ArrayList<Cube> cubes = new ArrayList<Cube>();
     ArrayList<Cube> airs = new ArrayList<Cube>();
     try{

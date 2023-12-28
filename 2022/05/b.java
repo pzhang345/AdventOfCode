@@ -8,7 +8,7 @@ class b {
     int start;
     int end;
     String temp;
-    File file = new File("directions.txt");
+    File file = new File("text.txt");
     try{
       Scanner sc = new Scanner(file);
       while (sc.hasNextLine()){

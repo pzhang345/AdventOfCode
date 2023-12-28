@@ -8,7 +8,7 @@ class b {
     int divider2ind = 2;
     Arr dividerpacket1 = new Arr("[[2]]");
     Arr dividerpacket2 = new Arr("[[6]]");
-    File file = new File("arrays.txt");
+    File file = new File("text.txt");
     try{
       Scanner sc = new Scanner(file);
       while (sc.hasNextLine()){

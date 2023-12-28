@@ -11,7 +11,7 @@ class b {
     long px = (goalx-1749)/1725;
     pheight = 2734*px + 2773;
     System.out.println(px);
-    File file = new File("move.txt");
+    File file = new File("text.txt");
     try{
       Scanner sc = new Scanner(file);
       while (sc.hasNextLine()){

@@ -16,7 +16,7 @@ public class b {
     String str = "";
     Dir files = new Dir("/");
     Dir current = files;
-    File txt = new File("dir.txt");
+    File txt = new File("text.txt");
     try{
       Scanner sc = new Scanner(txt);
       while (sc.hasNextLine()){

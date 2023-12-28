@@ -8,7 +8,7 @@ class a {
     Arr arr2;
     int count = 0;
     int total = 0;
-    File file = new File("arrays.txt");
+    File file = new File("text.txt");
     try{
       Scanner sc = new Scanner(file);
       while (sc.hasNextLine()){

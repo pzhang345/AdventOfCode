@@ -49,7 +49,7 @@ class a {
     long total = 0;
     long num;
     String str = "";
-    File file = new File("numbers.txt");
+    File file = new File("text.txt");
     try{
       Scanner sc = new Scanner(file);
       while (sc.hasNextLine()){

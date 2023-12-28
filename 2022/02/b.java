@@ -4,7 +4,7 @@ class b {
   public static void main(String[] args) {
     int score = 0;
     String string = "";
-    File file = new File("guide.txt");
+    File file = new File("text.txt");
     try{
       Scanner sc = new Scanner(file);
       while (sc.hasNextLine()){

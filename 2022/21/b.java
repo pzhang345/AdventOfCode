@@ -8,7 +8,7 @@ class b {
     Monkey m2 = null;
     Monkey root = null;
     Monkey humn = null;
-    File file = new File("monkeys.txt");
+    File file = new File("text.txt");
     int count = 0;
     try{
       Scanner sc = new Scanner(file);

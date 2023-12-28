@@ -5,7 +5,7 @@ class a {
     String str = "";
     ArrayList<ArrayList<Integer>> map = new ArrayList<ArrayList<Integer>>();
     int count = 0;
-    File file = new File("elves.txt");
+    File file = new File("text.txt");
     try{
       Scanner sc = new Scanner(file);
       while (sc.hasNextLine()){

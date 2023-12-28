@@ -4,7 +4,7 @@ import java.util.*;
 class b {
   public static void main(String[] args) {
     String[] str = new String[7];
-    File file = new File("Monkeys.txt");
+    File file = new File("text.txt");
     Monkey[] monkeys = new Monkey[8];
     for(int i = 0; i<monkeys.length;i++){
       monkeys[i] = new Monkey();

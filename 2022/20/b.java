@@ -50,7 +50,7 @@ class b {
   public static void main(String[] args) {
     String str = "";
     ArrayList<Numbers> list = new ArrayList<Numbers>();
-    File file = new File("num.txt");
+    File file = new File("text.txt");
     try{
       Scanner sc = new Scanner(file);
       while (sc.hasNextLine()){

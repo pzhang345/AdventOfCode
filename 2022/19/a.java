@@ -59,7 +59,7 @@ class a {
   }
   public static void main(String[] args) {
     String str = "";
-    File file = new File("machines.txt");
+    File file = new File("text.txt");
     //int max = 0;
     Robots ore;
     Robots clay;
