@@ -1,4 +1,4 @@
-door, key = [int(i) for i in open("test.txt").read().split("\n")]
+door, key = [int(i) for i in open("text.txt").read().split("\n")]
 print(door,key)
 dval = 1
 dcount = 0
