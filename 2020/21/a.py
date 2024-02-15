@@ -27,4 +27,4 @@ count  = 0
 for i in s:
     if not i in canCon:
         count += s[i]
-print("Answer: ",count)
+print("Answer:",count)
