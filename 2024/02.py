@@ -32,6 +32,8 @@ def part2():
             if d <= 0 or d > 3:
                 return False
         return True
+    
+    
     c = 0
     for i in f.split("\n"):
         nums = [int(j) for j in i.split(" ")]
