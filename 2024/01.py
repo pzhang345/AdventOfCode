@@ -18,6 +18,7 @@ def part1():
 def part2():
     l1 = []
     l2 = {}
+    
     for i in f.split("\n"):
         n = [int(j) for j in i.split("   ")]
         l1 += [n[0]]
