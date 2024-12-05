@@ -1,6 +1,6 @@
 from aocd import get_data
 f = get_data(day=5,year=2024)
-# f = open("test.txt").read()
+
 
 rules,pages = f.split("\n\n")
 r = {}
