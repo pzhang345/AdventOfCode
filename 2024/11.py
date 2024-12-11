@@ -28,7 +28,6 @@ def part2():
     for i in l:
         add(d,i,1)
     for i in range(75):
-        # print(i,d)
         nd = {}
         for k,v in d.items():
             if k == '0':
