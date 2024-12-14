@@ -1,5 +1,4 @@
 from aocd import get_data
-import keyboard
 f = get_data(day=14,year=2024)
 log = open("log.txt","w")
 
