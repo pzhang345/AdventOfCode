@@ -63,7 +63,7 @@ def part2():
             r = getLength(v)
             if(r > m):
                 m = r
-        # print(c)
+
         c += 1
         if m > 20:
             log.write(stringp(p))
