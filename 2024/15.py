@@ -64,15 +64,13 @@ def part2():
     for i in m:
         check = deque([(x,y)])
         move = True
-        done = False
         bi = set()
-        while not done and check:
+        while move and check:
             newx,newy = check.pop()
             newx += dirs[i][0]
             newy += dirs[i][1]
             if b[newy][newx] == "#":
                 move = False
-                done = True
             elif [newx,newy] in boxes or [newx - 1,newy] in boxes:
                 if [newx - 1,newy] in boxes:
                     newx = newx - 1
