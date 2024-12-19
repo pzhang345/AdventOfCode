@@ -1,7 +1,6 @@
 from aocd import get_data
 from functools import cache
 f = get_data(day=19,year=2024)
-print(f)
 
 def part1():
     combo,l = f.split("\n\n")
