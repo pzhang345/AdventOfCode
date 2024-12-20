@@ -1,7 +1,6 @@
 from aocd import get_data
 from collections import deque
 f = get_data(day=20,year=2024)
-# f = open("test.txt").read()
 
 def part1():
     b = f.split("\n")
