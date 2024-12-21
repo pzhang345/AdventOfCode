@@ -132,7 +132,7 @@ def part2():
     codes = f.split("\n")
     dpcache = {}
     depth = 25
-    
+
     for i in rdkeys:
         for j in rdkeys:
             getKeyPath(dkeys,rdkeys,i,j,dpcache)
@@ -167,5 +167,6 @@ def part2():
                 m = total
         ans += int(c[:-1]) * m
     return ans
+
 print("Part 1:", part1())
 print("Part 2:", part2())
