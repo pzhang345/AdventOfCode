@@ -13,7 +13,6 @@ def part1():
             conn[c2] = set()
         conn[c2].add(c1)
 
-    c = 0
     done = set()
     for i in conn:
         if i[0] != 't':
