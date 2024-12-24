@@ -79,7 +79,7 @@ def part2():
 				out.write(i + "\t" + str(fr[i]) + "\n")
 		out.write("\n")
 	out.close()
-	return "Did this one manually by tuning the adder, check \"log.txt\" for the potentially incorrect bits."
+	return "Did this one manually by tuning the adder. Check \"log.txt\" for the potentially incorrect bits."
 
 print("Part 1:", part1())
 print("Part 2:", part2())
