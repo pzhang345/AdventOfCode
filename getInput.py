@@ -5,7 +5,7 @@ import sys
 script_dir = os.path.dirname(os.path.abspath(__file__)) 
 os.chdir(script_dir)
 
-cookie = {"session":open("sessionId.txt").read()}
+cookie = {"session":open("sessionID").read()}
 
 def getInput(year,day):
     if not os.path.isdir(f"Inputs/{year}"):
@@ -16,6 +16,10 @@ def getInput(year,day):
 
         if conn.status_code == 404:
             raise Exception("Invaild year or day")
+
+        if conn.text.strip() == "Puzzle inputs differ by user.  Please log in to get your puzzle input.":
+            raise Exception("Session ID is invalid")
+        
         f = open(f"Inputs/{year}/{str(day).zfill(2)}.txt","w")
         f.write(conn.text.strip())
         f.close()

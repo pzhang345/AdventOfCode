@@ -1,2 +1,5 @@
 /Inputs
 *.txt
+sessionID
+2015
+*__pycache__/
