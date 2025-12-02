@@ -19,10 +19,10 @@ def part1(input: str):
                 return upperHalf
                 
         
-    input = input.split(",")
+    ranges = input.split(",")
     sum = 0
-    for ranges in input:
-        a, b = ranges.split("-")
+    for r in ranges:
+        a, b = r.split("-")
         a_bound = get_bound(a, True)
         b_bound = get_bound(b, False)
         for i in range(a_bound, b_bound + 1):
@@ -32,29 +32,46 @@ def part1(input: str):
 
 
 def part2(input: str):
-    def isRepeat(s):
-        for c in range(1, len(s)):
-            
-            if len(s) % c != 0:
-                continue
-            
-            repeat = True
-            for i in range(0, len(s), c):
-                if s[i:i+c] != s[0:c]:
-                    repeat = False
-                    break
-            if repeat:
-                return True
-        return False
-            
-    input = input.split(",")
+    def get_bound(s, isLower, rl):
+        l = len(s)
+        if l%rl != 0 and not isLower:
+            return int("9" * (l//rl))
+        elif l%rl != 0 and isLower:
+            return int("1" + "0" * (l//rl))
+       
+        sections = [int(s[i:i+l//rl]) for i in range(0, l, l//rl)]
+                
+        for i in range(len(sections)):
+            if sections[0] != sections[i]:
+                if isLower:
+                    if sections[0] < sections[i]:
+                        return sections[0] + 1
+                    elif sections[0] > sections[i]:
+                        return sections[0]
+                    
+                elif not isLower:
+                    if sections[0] < sections[i]:
+                        return sections[0]
+                    elif sections[0] > sections[i]:
+                        return sections[0] - 1
+        
+        return sections[0]
+        
+    ranges = input.split(",")
     sum = 0
-    for ranges in input:
-        a, b = ranges.split("-")
-        a = int(a)
-        b = int(b)
-        for i in range(a, b + 1):
-            if isRepeat(str(i)):
-                sum += i
+    for r in ranges:
+        a, b = r.split("-")
+        added = set()
+        for i in range(2,len(b) + 1):
+            a_bound = get_bound(a, True, i)
+            b_bound = get_bound(b, False, i)
+            
+            for j in range(a_bound, b_bound + 1):
+                num = int(str(j) * i)
+                if num not in added:
+                    added.add(num)
+                    sum += num              
     return sum
+
+
 run(2, part1, part2)
