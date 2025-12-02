@@ -3,3 +3,4 @@
 sessionID
 2015
 *__pycache__/
+.env
