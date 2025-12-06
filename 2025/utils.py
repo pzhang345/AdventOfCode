@@ -1,7 +1,9 @@
+import argparse
 import os
 import sys
 import subprocess
 import time
+from argparse import ArgumentParser
 
 YEAR = 2025
 PATH = os.path.dirname(os.path.abspath(__file__))
@@ -42,7 +44,15 @@ def run_part(name, part, input):
     
     return ans
 
-def run(day, part1, part2, part=None, test=False):
+def run(day, part1, part2, part=None, test=False, cli_args=True):
+    if cli_args:
+        parser = ArgumentParser(add_help=False)
+        parser.add_argument("-p", "--part", type=int, choices=[1,2], default=part)
+        parser.add_argument("-t", "--test", type=bool, nargs="?", default=test, const=True)
+        args = parser.parse_args(sys.argv[1:])
+        test = args.test
+        part = args.part
+        
     if test:
         input = get_test()
     else:

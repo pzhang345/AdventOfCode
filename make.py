@@ -24,6 +24,6 @@ def part2(input: str):
     return 0
 
 
-run({day}, part1, part2, part=1)"""
+run({day}, part1, part2)"""
 )
 f.close()
