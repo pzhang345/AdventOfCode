@@ -48,7 +48,7 @@ def run(day, part1, part2, part=None, test=False, cli_args=True):
     if cli_args:
         parser = ArgumentParser(add_help=False)
         parser.add_argument("-p", "--part", type=int, choices=[1,2], default=part)
-        parser.add_argument("-t", "--test", type=bool, nargs="?", default=test, const=True)
+        parser.add_argument("-t", "--test", action="store_true", default=test)
         args = parser.parse_args(sys.argv[1:])
         test = args.test
         part = args.part
